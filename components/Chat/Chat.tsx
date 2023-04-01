@@ -150,19 +150,19 @@ export const Chat: FC<Props> = memo(
     }, [messagesEndRef]);
 
     return (
-      <div className="relative flex-1 overflow-hidden bg-white dark:bg-[#343541]">
+      <div className="relative flex-1 overflow-hidden bg-white dark:bg-green-800">
         {!(apiKey || serverSideApiKeyIsSet) ? (
           <div className="mx-auto flex h-full w-[300px] flex-col justify-center space-y-6 sm:w-[600px]">
             <div className="text-center text-4xl font-bold text-black dark:text-white">
-              Welcome to Chatbot UI
+              Welcome to Progbot 👋
             </div>
             <div className="text-center text-lg text-black dark:text-white">
               <div className="mb-8">{`Chatbot UI is an open source clone of OpenAI's ChatGPT UI.`}</div>
               <div className="mb-2 font-bold">
-                Important: Chatbot UI is 100% unaffiliated with OpenAI.
+                Important: Progbot and Chatbot UI is 100% unaffiliated with OpenAI.
               </div>
             </div>
-            <div className="text-center text-gray-500 dark:text-gray-400">
+            <div className="text-center text-green-500 dark:text-green-400">
               <div className="mb-2">
                 Chatbot UI allows you to plug in your API key to use this UI
                 with their API.
@@ -209,7 +209,7 @@ export const Chat: FC<Props> = memo(
                           <Spinner size="16px" className="mx-auto" />
                         </div>
                       ) : (
-                        'Chatbot UI'
+                        'Progbot 👋'
                       )}
                     </div>
 
@@ -243,7 +243,7 @@ export const Chat: FC<Props> = memo(
                 </>
               ) : (
                 <>
-                  <div className="flex justify-center border border-b-neutral-300 bg-neutral-100 py-2 text-sm text-neutral-500 dark:border-none dark:bg-[#444654] dark:text-neutral-200">
+                  <div className="flex justify-center border border-b-neutral-300 bg-neutral-100 py-2 text-sm text-neutral-500 dark:border-none dark:bg-green-800 dark:text-neutral-200">
                     {t('Model')}: {conversation.model.name}
                     <button
                       className="ml-2 cursor-pointer hover:opacity-50"
@@ -288,7 +288,7 @@ export const Chat: FC<Props> = memo(
                   {loading && <ChatLoader />}
 
                   <div
-                    className="h-[162px] bg-white dark:bg-[#343541]"
+                    className="h-[162px] bg-white dark:bg-green-800"
                     ref={messagesEndRef}
                   />
                 </>
@@ -318,7 +318,7 @@ export const Chat: FC<Props> = memo(
         {showScrollDownButton && (
           <div className="absolute bottom-0 right-0 mb-4 mr-4 pb-20">
             <button
-              className="flex h-7 w-7 items-center justify-center rounded-full bg-neutral-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700"
+              className="flex h-7 w-7 items-center justify-center rounded-full bg-neutral-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-green-700"
               onClick={handleScrollDown}
             >
               <IconArrowDown size={18} />
