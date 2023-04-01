@@ -312,17 +312,17 @@ export const ChatInput: FC<Props> = ({
         </div>
       </div>
       <div className="px-3 pt-2 pb-3 text-center text-[12px] text-black/50 dark:text-white/50 md:px-4 md:pt-3 md:pb-6">
+        {t("Progbot 👋. Based on ")}
         <a
           href="https://github.com/mckaywrigley/chatbot-ui"
           target="_blank"
           rel="noreferrer"
           className="underline"
         >
-          Progbot 👋
+          Chatbot UI
         </a>
-        .{' '}
         {t(
-          "Based on Chatbot UI, which is in turn built on ChatGPT. Hacked by Jonny.",
+          ", which is in turn built on ChatGPT. Hacked by Jonny.",
         )}
       </div>
     </div>

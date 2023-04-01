@@ -40,7 +40,7 @@ export const ModelSelect: FC<Props> = ({
             <option
               key={model.id}
               value={model.id}
-              className="dark:bg-[#343541] dark:text-white"
+              className="dark:bg-green-900 dark:text-white"
             >
               {model.id === defaultModelId
                 ? `Default (${model.name})`
