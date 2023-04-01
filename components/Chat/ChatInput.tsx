@@ -242,7 +242,7 @@ export const ChatInput: FC<Props> = ({
       <div className="stretch mx-2 mt-4 flex flex-row gap-3 last:mb-2 md:mx-4 md:mt-[52px] md:last:mb-6 lg:mx-auto lg:max-w-3xl">
         {messageIsStreaming && (
           <button
-            className="absolute left-0 right-0 mx-auto mt-2 flex w-fit items-center gap-3 rounded border border-neutral-200 bg-white py-2 px-4 text-black hover:opacity-50 dark:border-neutral-600 dark:bg-green-900 dark:text-white md:top-0"
+            className="absolute left-0 right-0 mx-auto mt-2 flex w-fit items-center gap-3 rounded border border-gray-200 bg-white py-2 px-4 text-black hover:opacity-50 dark:border-gray-600 dark:bg-green-900 dark:text-white md:top-0"
             onClick={handleStopConversation}
           >
             <IconPlayerStop size={16} /> {t('Stop Generating')}
@@ -251,7 +251,7 @@ export const ChatInput: FC<Props> = ({
 
         {!messageIsStreaming && !conversationIsEmpty && (
           <button
-            className="absolute left-0 right-0 mx-auto mt-2 flex w-fit items-center gap-3 rounded border border-neutral-200 dark:border-green-700 bg-white py-2 px-4 text-black hover:opacity-50 dark:border-neutral-600 dark:bg-green-900 dark:text-green-200 md:top-0"
+            className="absolute left-0 right-0 mx-auto mt-2 flex w-fit items-center gap-3 rounded border border-gray-200 dark:border-green-700 bg-white py-2 px-4 text-black hover:opacity-50 dark:border-gray-600 dark:bg-green-900 dark:text-green-200 md:top-0"
             onClick={onRegenerate}
           >
             <IconRepeat size={16} /> {t('Regenerate response')}
@@ -283,7 +283,7 @@ export const ChatInput: FC<Props> = ({
             onKeyDown={handleKeyDown}
           />
           <button
-            className="absolute right-2 top-2 rounded-sm p-1 text-neutral-800 opacity-60 hover:bg-neutral-200 hover:text-neutral-900 dark:bg-opacity-50 dark:text-neutral-100 dark:hover:text-neutral-200"
+            className="absolute right-2 top-2 rounded-sm p-1 text-gray-800 opacity-60 hover:bg-gray-200 hover:text-gray-900 dark:bg-opacity-50 dark:text-gray-100 dark:hover:text-gray-200"
             onClick={handleSend}
           >
             <IconSend size={18} />

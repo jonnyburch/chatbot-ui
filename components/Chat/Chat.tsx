@@ -214,7 +214,7 @@ export const Chat: FC<Props> = memo(
                     </div>
 
                     {models.length > 0 && (
-                      <div className="flex h-full flex-col space-y-4 rounded-lg border border-neutral-200 p-4 dark:border-neutral-600">
+                      <div className="flex h-full flex-col space-y-4 rounded-lg border border-gray-200 p-4 dark:border-gray-600">
                         <ModelSelect
                           model={conversation.model}
                           models={models}
@@ -243,7 +243,7 @@ export const Chat: FC<Props> = memo(
                 </>
               ) : (
                 <>
-                  <div className="flex justify-center border border-b-neutral-300 bg-neutral-100 py-2 text-sm text-neutral-500 dark:border-none dark:bg-green-800 dark:text-neutral-200">
+                  <div className="flex justify-center border border-b-gray-300 bg-gray-100 py-2 text-sm text-gray-500 dark:border-none dark:bg-green-800 dark:text-gray-200">
                     {t('Model')}: {conversation.model.name}
                     <button
                       className="ml-2 cursor-pointer hover:opacity-50"
@@ -260,7 +260,7 @@ export const Chat: FC<Props> = memo(
                   </div>
                   {showSettings && (
                     <div className="flex flex-col space-y-10 md:mx-auto md:max-w-xl md:gap-6 md:py-3 md:pt-6 lg:max-w-2xl lg:px-0 xl:max-w-3xl">
-                      <div className="flex h-full flex-col space-y-4 border-b border-neutral-200 p-4 dark:border-neutral-600 md:rounded-lg md:border">
+                      <div className="flex h-full flex-col space-y-4 border-b border-gray-200 p-4 dark:border-gray-600 md:rounded-lg md:border">
                         <ModelSelect
                           model={conversation.model}
                           models={models}
@@ -318,7 +318,7 @@ export const Chat: FC<Props> = memo(
         {showScrollDownButton && (
           <div className="absolute bottom-0 right-0 mb-4 mr-4 pb-20">
             <button
-              className="flex h-7 w-7 items-center justify-center rounded-full bg-neutral-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-green-700"
+              className="flex h-7 w-7 items-center justify-center rounded-full bg-gray-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-green-700"
               onClick={handleScrollDown}
             >
               <IconArrowDown size={18} />

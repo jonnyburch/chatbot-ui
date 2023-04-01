@@ -106,7 +106,7 @@ export const PromptFolder: FC<Props> = ({
               <IconCaretRight size={18} />
             )}
             <input
-              className="mr-12 flex-1 overflow-hidden overflow-ellipsis border-neutral-400 bg-transparent text-left text-[12.5px] leading-3 text-white outline-none focus:border-neutral-100"
+              className="mr-12 flex-1 overflow-hidden overflow-ellipsis border-gray-400 bg-transparent text-left text-[12.5px] leading-3 text-white outline-none focus:border-gray-100"
               type="text"
               value={renameValue}
               onChange={(e) => setRenameValue(e.target.value)}
@@ -138,7 +138,7 @@ export const PromptFolder: FC<Props> = ({
         {(isDeleting || isRenaming) && (
           <div className="absolute right-1 z-10 flex text-gray-300">
             <button
-              className="min-w-[20px] p-1 text-neutral-400 hover:text-neutral-100"
+              className="min-w-[20px] p-1 text-gray-400 hover:text-gray-100"
               onClick={(e) => {
                 e.stopPropagation();
 
@@ -155,7 +155,7 @@ export const PromptFolder: FC<Props> = ({
               <IconCheck size={18} />
             </button>
             <button
-              className="min-w-[20px] p-1 text-neutral-400 hover:text-neutral-100"
+              className="min-w-[20px] p-1 text-gray-400 hover:text-gray-100"
               onClick={(e) => {
                 e.stopPropagation();
                 setIsDeleting(false);
@@ -170,7 +170,7 @@ export const PromptFolder: FC<Props> = ({
         {!isDeleting && !isRenaming && (
           <div className="absolute right-1 z-10 flex text-gray-300">
             <button
-              className="min-w-[20px] p-1 text-neutral-400 hover:text-neutral-100"
+              className="min-w-[20px] p-1 text-gray-400 hover:text-gray-100"
               onClick={(e) => {
                 e.stopPropagation();
                 setIsRenaming(true);
@@ -180,7 +180,7 @@ export const PromptFolder: FC<Props> = ({
               <IconPencil size={18} />
             </button>
             <button
-              className="min-w-[20px] p-1 text-neutral-400 hover:text-neutral-100"
+              className="min-w-[20px] p-1 text-gray-400 hover:text-gray-100"
               onClick={(e) => {
                 e.stopPropagation();
                 setIsDeleting(true);

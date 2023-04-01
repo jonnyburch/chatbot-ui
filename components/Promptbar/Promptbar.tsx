@@ -119,7 +119,7 @@ export const Promptbar: FC<Props> = ({
         </button>
 
         <IconArrowBarRight
-          className="hidden p-1 ml-1 cursor-pointer text-neutral-300 hover:text-neutral-400 sm:flex"
+          className="hidden p-1 ml-1 cursor-pointer text-gray-300 hover:text-gray-400 sm:flex"
           size={32}
           onClick={onToggleSidebar}
         />

@@ -140,7 +140,7 @@ export const Chatbar: FC<Props> = ({
         </button>
 
         <IconArrowBarLeft
-          className="ml-1 hidden cursor-pointer p-1 text-neutral-300 hover:text-neutral-400 sm:flex"
+          className="ml-1 hidden cursor-pointer p-1 text-gray-300 hover:text-gray-400 sm:flex"
           size={32}
           onClick={onToggleSidebar}
         />
